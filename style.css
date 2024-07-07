@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+}
+
+header{
+    background:lightcoral;
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+}
+        nav ul {
+            list-style-type: none;
+                /* Remove os marcadores */
+            padding-left: 10px;
+                /* Remove o recuo padrão da esquerda */
+            }
+.section {
+    list-style-type: none;
+        /* Remove os marcadores */
+        padding-left: 20px;
+        /* Remove o recuo padrão da esquerda */
+
+}            
