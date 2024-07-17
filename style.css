@@ -11,6 +11,10 @@ body{
     background-color: white
 
 }
+.header img{
+    margin: 10px;
+   
+}
 .card-container {
     display: flex;
     justify-content:center;
@@ -62,18 +66,12 @@ body{
     margin-top: 16px;
     color: #fff;  
 }
-.video-logo{
-    display: inline-block;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 15px;
-    padding: 15px;
-    margin: 100px;
-}
+
 .nav-list{
    background-color: hsl(308, 72%, 73%);
    box-shadow: 0px 3px 10px rgb(240, 145, 216); 
    align-items: center;
+   margin-bottom: 10px;
 }
 .nav-bar{
    display: flex;
@@ -94,19 +92,106 @@ body{
 
 }
 .nav-item5{
-   margin: 15px;
-   padding: 8px 16px;
+   margin: 10px;
+   padding: 10px 15px;
    background-color: rgb(185, 43, 131);
    color: rgb(248, 184, 234);
-   border-radius: 10px;
-   justify-items: end;   
+   border-bottom-left-radius: 50px;
+   align-items: end;
 }
-
 .mensagem {
-
     display: flex;
-
     margin: 20px;
-    padding: 8px 16px;
+    padding: 10px 20px;
+    color: pink;
+    font-size: 20px;
+    justify-content: center;   
+    display: flex;
+    align-items: center;
+}
+        
+.imagem-descomplicando .foto1{
+    margin: 100px;
+    padding: 50px  100px;    
+}
+.title1{
+    color: #e099c9;
+    font-size: 20px;  
+}
+.title2{
+    color: #e099c9;
+    font-size: 20px;
+}
+.link-videos{
+    display: flex;
+    list-style: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #e099c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;   
+}
+.aside{
+overflow-x: hidden;
+}
+.h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ques{
+    background-color: rgb(185, 43, 131);
+    padding: 10px  ;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
     
 }
+.ques:hover{
+    background-color: rgb(248, 184, 234);
+}
+.ans{
+    background-color: rgb(185, 43, 131);
+    padding: 20px ;
+    font-size: 15px;
+    color: white;
+    border-top: 0px solid;
+    transition:max-height all .3s ease-in-out; 
+    overflow: hidden;
+    max-height: 0px;
+}
+.faq.active .ans{
+    max-height: 300px;
+}
+.faq-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.ans p{
+  background-color:rgb(185, 43, 132);
+  padding: 30px;
+  font-size: 20px;
+  border-top: 1px solid rgb(248, 184, 234);
+
+}
+.seta{
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin: 0 10px;
+    float: left;
+}
+
+    
