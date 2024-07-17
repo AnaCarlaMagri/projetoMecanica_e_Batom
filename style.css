@@ -113,6 +113,14 @@ body{
 .imagem-descomplicando .foto1{
     margin: 100px;
     padding: 50px  100px;    
+    display: flex;
+    justify-content: center;
+        /* Centraliza horizontalmente */
+    align-items: center;
+        /* Centraliza verticalmente */
+    height: 100vh;
+        /* 100% da altura da viewport */
+    margin: 0;
 }
 .title1{
     color: #e099c9;
@@ -154,6 +162,7 @@ overflow-x: hidden;
     justify-content: space-around;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    text-align: center;
     
 }
 .ques:hover{
@@ -161,16 +170,28 @@ overflow-x: hidden;
 }
 .ans{
     background-color: rgb(185, 43, 131);
-    padding: 20px ;
+    padding: 30px ;
     font-size: 15px;
     color: white;
     border-top: 0px solid;
-    transition:max-height all .3s ease-in-out; 
-    overflow: hidden;
+    transition: all .3s ease-in-out; 
+    overflow:hidden ;
     max-height: 0px;
+    text-align: justify;
+    
+    
+    
+}
+.faq i{
+   transition: all .3s ease-in-out;
+
 }
 .faq.active .ans{
-    max-height: 300px;
+    max-height: 2000px;
+}
+.faq.active i{
+    transform: rotate(0px);
+
 }
 .faq-list{
     display: flex;
@@ -190,8 +211,10 @@ overflow-x: hidden;
     border-top: 20px solid white;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    margin: 0 10px;
+    margin: 0px 10px;
     float: left;
 }
-
+p{
+    margin-bottom: 10px;
+}
     
