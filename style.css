@@ -3,6 +3,72 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header {
+    background-color: rgba(247, 187, 234, 0.863);
+    /* Fundo rosa nude */
+    padding: 10px;
+    display: flex;
+    align-items:end;
+   
+   
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.nav-list {
+    margin-right: 50px;
+    justify-content:end;
+    font-size: 18x;
+    margin-right: 50px;
+    justify-items: end;
+}
+.nav-list .nav-item{
+    margin-right: 50px;
+    justify-items: flex-end;
+
+}
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    /* Rosa escuro para os links */
+    font-weight: bold;
+    padding: 0px;
+    transition: all 0.3s ease;
+}
+.nav-item a:hover {
+    background-color: #e6d0d0;
+    /* Rosa claro ao passar o mouse */
+    color: rgb(248, 184,234);
+   
+}
+
+.foto1 {
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+/* Estilo para a mensagem */
+.mensagem {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 28px;
+    color: rgba(248, 123, 200, 0.774);
 }
 
 body {
@@ -18,11 +84,11 @@ body {
 
 .Card {
     width: 350px;
-    background-color: #f8f9fa;
+    background-color: rgba(250, 179, 235, 0.979);
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px white;
     margin: 20px;
 }
 
@@ -38,13 +104,13 @@ body {
 .card-content h3 {
     font-size: 18px;
     margin-bottom: 8px;
-    color: #6a6d70;
+    color: white;
 }
 
 .card-content p {
     font-size: 15px;
     line-height: 1.5;
-    color: #343a40;
+    color: rgb(236, 9, 187);
 }
 
 .card-content h5 {
@@ -63,76 +129,9 @@ body {
     margin-top: 10px;
 }
 
-.extra-text {
+.extra-text{
     display: none;
 }
-
-.nav-list{
-   background-color: rgb(245, 241, 243);
-   box-shadow: 0px 3px 10px rgb(240, 145, 216); 
-   align-items: center;
-   margin-bottom: 10px;
-   padding: 0 10px;
-   
-   
-}
-.nav-bar{
-   display: flex;
-   justify-content: flex-end;
-   
-   
-}
-.nav-list img{
-   padding:0 10px;
-   justify-content:start;
-
-
-}
-
-.nav-list ul{
-   display: flex;
-   justify-content: flex-end;
-   list-style: none;
-}
-
-.nav-item1{
-   margin: 0px;
-   color: rgb(185, 43, 131);
-   padding: 10px 20px;
-
-}
-
-.nav-item5{
-    background-color: rgb(247, 106, 193);
-    border-bottom-left-radius: 10px;
-    align-items: end;
-    color: rgb(185, 43, 131);
-    border: none;
-    padding: 20px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-    margin: 10px;
-}
-.mensagem {
-    display: flex;
-    margin: 20px;
-    padding: 10px 20px;
-    color: pink;
-    font-size: 20px;
-    justify-content: center;   
-    display: flex;
-    align-items: center;
-}
-        
-.foto1{
-    width: 280%;
-    justify-content: start;
-    align-content: start;
-    
-}
-   
-  
 .title1 h1{
     margin: 30px;
     padding: 10px 20px;
@@ -155,6 +154,13 @@ body {
     font-size: 30px;
     text-align: start;
 }
+.mensagem-title3{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 28px;
+    color: rgba(248, 123, 200, 0.774);
+    }
 
 .container{
     min-height: 80vh;
@@ -181,7 +187,7 @@ body {
 .ques{
     background-color: rgba(248, 123, 200, 0.774);
     padding: 10px  ;
-    font-size: 18px;
+    font-size: 22px;
     color:white;
     display: flex;
     align-items: center;
@@ -192,12 +198,11 @@ body {
     
 }
 .ques .h3{
-    font-size:18px;
+    font-size:22px;
     margin-bottom: 10px;
     color: rgb(106, 109, 112);
     
 }       
-
 
 .ques:hover{
     background-color: rgba(248, 123,200,0.774);
@@ -206,8 +211,8 @@ body {
     background-color: white;
     padding: 1px ;
     font-size: 15px;
-    color: rgba(153, 147, 151, 0.897);
-    border-top: 0px solid;
+    color: rgb(236, 9, 187);
+    border-top: 0,5px solid;
     transition: all .3s ease-in-out; 
     overflow:hidden ;
     max-height: 0px;
@@ -237,7 +242,7 @@ body {
 .ans p{
     background-color:white;
     padding: 10px;
-    font-size: 15px;
+    font-size: 18px;
     
 
 }
@@ -249,44 +254,78 @@ body {
     float: left;
     justify-content: end
 }
+
 p{
     margin-bottom: 10px;
 }
-.mensagem{
-    text-align: center;
-    font-size: 18px;
 
-}
 .msg-sobrenos{
     text-align: center;
     font-size: 18px;
-    color:#e099c9 ;
+    margin-top: 28px;
+    color: rgba(248, 123, 200, 0.774);
 }
 .title3 h2{
     text-align: justify ;
     color: #e099c9;
     font-size: 20px;
 }
+
+
+/* Estilo para o container do carousel */
+#carouselExampleCaptions {
+    max-width: 1000px;
+    /* Define a largura máxima do carousel */
+    margin: 0 auto;
+    /* Centraliza o carousel na página */
+}
+
+
+.carousel-item iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Estilo para os títulos dos vídeos */
+.carousel-caption h5 {
+     font-size: 1.5rem;
+    /* Tamanho da fonte */
+    margin-top: 0px;
+    /* Espaçamento superior */
+}
+
+
+.carousel-caption p {
+    color: #666;
+    /* Cor do texto */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+}
 .newsletter {
-    background-color:rgb(248, 184,234);
+    background-color: rgb(248, 184, 234);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(240, 1, 160, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px white;
     text-align: start;
     max-width: 400px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 100px;
+    justify-content: center;
 }
+
 .newsletter h2 {
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
     margin-bottom: 10px;
     color: rgb(247, 126, 220);
 }
-
 .newsletter p {
-    font-size: 16px;
-    color: #fffefe;
+    font-size: 18px;
+    color: hsl(0, 100%, 100%);
+    text-align: justify;
+    margin-top: 28px;
     margin-bottom: 20px;
 }
 
@@ -309,24 +348,37 @@ input[type="email"] {
     border: 1px solid white;
     border-radius: 4px;
     font-size: 14px;
+    
 }
-
+.submit{
+    background-color: #e099c9;
+    
+}
 button {
-    background-color: rgb(247,106, 193);
-    color: #ffffff;
+    background-color: rgb(248, 184, 234);
+    color: rgba(245, 12, 156, 0.774);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
     
+
 }
 
 button:hover {
-    background-color:rgb(240, 145, 216);
+    background-color:transparent;
 }
-.footer{
-    text-align: justify;
+
+.footer {
+    text-align: center;
     font-size: 18px;
-    color: pink;
-}    
+    margin-top: 28px;
+    color: rgb(250, 4, 156);
+}
+.end {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 28px;
+    color: rgba(245, 12, 156, 0.774);
+}

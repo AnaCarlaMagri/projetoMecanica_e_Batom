@@ -8,4 +8,6 @@ faqs.forEach((faq) => {
       faq.classList.add("active");
     }
   });
-});
+}); 
+
+
