@@ -6,139 +6,154 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
-header {
-    background-color: rgba(247, 187, 234, 0.863);
-    /* Fundo rosa nude */
-    padding: 10px;
-    display: flex;
-    align-items:end;
-   
-   
-}
-
-.nav-bar {
-    display: flex;
-    align-items: center;
-}
-
-
-.nav-list ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-.nav-list {
-    margin-right: 50px;
-    justify-content:end;
-    font-size: 18x;
-    margin-right: 50px;
-    justify-items: end;
-}
-.nav-list .nav-item{
-    margin-right: 50px;
-    justify-items: flex-end;
-
-}
-.nav-item a {
-    text-decoration: none;
-    color: white;
-    /* Rosa escuro para os links */
-    font-weight: bold;
-    padding: 0px;
-    transition: all 0.3s ease;
-}
-.nav-item a:hover {
-    background-color: #e6d0d0;
-    /* Rosa claro ao passar o mouse */
-    color: rgb(248, 184,234);
+.navbar{
+    background-color: rgb(248, 215, 241);
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(247, 126, 220);
+    margin: 10px;
+  
    
 }
+.nav-item h5{
+    color: rebeccapurple;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    width: auto;
+}
 
-.foto1 {
+.logo-img {
+    max-height: 20px;
+    /* Ajuste conforme necessário */
+    width: 20px;
+    /* Mantém a proporção */
+}
+.foto-com-mensagem{
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
-    text-align: center;
-    
+    width: auto;
 }
-
+.a:hover{
+    opacity: 0.7;
+}
+.title1 h1{
+    display: flex;
+    margin: 30px;
+    padding: 10px 20px;
+    color: rebeccapurple;
+    font-size: 30px;
+    text-align: start;
+}
 /* Estilo para a mensagem */
-.mensagem {
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
+.mensagem{
+    font-size: 10px;
     color: rgba(248, 123, 200, 0.774);
+    text-align: center;
+    padding: 40px 0 40px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: auto;
 }
 
-body {
-    background-color: white;
-}
-
+/* Container dos cards */
 .card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 50px;
+    /* Ajustado para melhor visualização */
 }
 
-.Card {
-    width: 350px;
-    background-color: rgba(250, 179, 235, 0.979);
-    border: 1px solid #ccc;
-    border-radius: 8px;
+/* Card */
+.card {
+    display: flex;
+    width: 400px;
+    background-color: rgb(245, 211, 237);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgb(247, 126, 220);
+    margin: 10px;
+    /* Ajustado para melhor espaçamento */
+    padding: 10px;
+    flex-direction: column;
     overflow: hidden;
-    box-shadow: 0px 2px 4px white;
-    margin: 20px;
+    transition: transform 0.3s ease;
 }
 
-.Card img {
+.card img {
     width: 100%;
     height: auto;
 }
 
 .card-content {
-    padding: 16px;
+    padding: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.3s ease;
+}
+
+.card.active .card-content {
+    height: 100px;
 }
 
 .card-content h3 {
     font-size: 18px;
-    margin-bottom: 8px;
-    color: white;
+    margin-bottom: 15px;
+    color: rgb(236, 9, 187);
+    text-align: center;
 }
 
 .card-content p {
     font-size: 15px;
     line-height: 1.5;
-    color: rgb(236, 9, 187);
+    color: rgb(73, 71, 71);
 }
 
 .card-content h5 {
     font-size: 17px;
-    color: #b92b84;
+    color: rgb(105, 101, 101);
     margin-bottom: 5px;
 }
 
-.card-content .btn {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #a15685;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
+/* Botão */
+.btnn {
+    border: none;
+    padding: 10px;
+    background-color: rgb(248, 184, 234);
+    color: rgb(236, 9, 187);
+    border-radius: 2px;
     margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
 }
 
-.extra-text{
-    display: none;
+.btn:hover {
+    background-color: rgb(236, 9, 187);
+    color: rgb(248, 184, 234);
 }
-.title1 h1{
-    margin: 30px;
-    padding: 10px 20px;
-    color: rebeccapurple;
-    font-size: 30px;  
-    text-align: start;
+
+#btn:hover {
+    background-color: transparent;
+    color: #e099c9;
+    transition: all 0.2s ease-in-out;
+}
+.more-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
 }
 .title2 h1{
+    display: flex;
     margin: 30px;
     padding: 10px 20px;
     color: rebeccapurple;
@@ -146,30 +161,38 @@ body {
     text-align: start;
     
 }
-.title3 h1{
+.title2 h2 {
+    font-size: 20px;
+    color: rgba(248, 123, 200, 0.774);
+    text-align: center;
+    padding: 40px 0 40px 0;  
+}
+.mensagem-title3{
+    font-size: 18px;
+    color: rgba(248, 123, 200, 0.774);
+    text-align: center;
+    padding: 40px 0 40px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: auto;
+}
+.title3 h1 {
+    display: flex;
     margin: 30px;
     padding: 10px 20px;
     color: rebeccapurple;
     font-size: 30px;
     text-align: start;
 }
-.mensagem-title3{
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 28px;
-    color: rgba(248, 123, 200, 0.774);
-    }
-
 .container{
-    min-height: 80vh;
-    width: 10vw;
-    background-color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;   
+    padding: 40px 0 40px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: auto;
 }
 .container h1{
     color:rebeccapurple;
@@ -249,28 +272,13 @@ body {
     border-top: 10px solid;
     border-left: 10px solid rgb(240, 145, 216);
     border-right: 10px solid rgb(240, 145, 216);
-    margin: 0px 10px;
-    float: left;
-    justify-content: end
+    margin: 10px 10px;
+       
 }
 
 p{
     margin-bottom: 10px;
 }
-
-.msg-sobrenos{
-    text-align: center;
-    font-size: 18px;
-    margin-top: 28px;
-    color: rgba(248, 123, 200, 0.774);
-}
-.title3 h2{
-    text-align: justify ;
-    color: #e099c9;
-    font-size: 20px;
-}
-
-
 /* Estilo para o container do carousel */
 #carouselExampleCaptions {
     max-width: 1000px;
@@ -301,36 +309,67 @@ p{
     font-size: 1rem;
     /* Tamanho da fonte */
 }
+/* Estilo do Container de Informações */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    /* Espaçamento entre as seções */
+}
+
+/* Estilo da seção Sobre Nós */
+.msg-sobrenos {
+    font-size: 18px;
+    color: rgba(248, 123, 200, 0.774);
+    text-align: center;
+    padding: 40px 0 40px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: auto;
+}
+
+.msg-sobrenos h2 {
+    text-align: center;
+    color: #e099c9;
+    font-size: 20px;
+}
+
+/* Estilo da seção Newsletter */
 .newsletter {
+    flex: 1;
+    /* Permite que essa seção ocupe o espaço disponível */
     background-color: rgb(248, 184, 234);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
     text-align: start;
-    max-width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    justify-content: center;
+    max-width: 48%;
+    /* Limita a largura máxima para caber lado a lado */
 }
 
 .newsletter h2 {
     font-size: 25px;
-    text-align: center;
     margin-bottom: 10px;
     color: rgb(247, 126, 220);
 }
+
 .newsletter p {
     font-size: 18px;
-    color: hsl(0, 100%, 100%);
-    text-align: justify;
-    margin-top: 28px;
-    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: 20px 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 label {
@@ -341,43 +380,41 @@ label {
 
 input[type="text"],
 input[type="email"] {
-    width: 350px;
+    width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid white;
     border-radius: 4px;
     font-size: 14px;
-    
-}
-.submit{
-    background-color: #e099c9;
-    
 }
 button {
     background-color: rgb(248, 184, 234);
-    color: rgba(245, 12, 156, 0.774);
+    color: rgba(243, 233, 239, 0.774);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
-    
-
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color:transparent;
+    background-color: rgba(245, 12, 156, 0.1);
 }
 
-.footer {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 28px;
-    color: rgb(250, 4, 156);
-}
+
+/* Estilo do rodapé */
 .end {
+    background-color: rgb(248, 215, 241);
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(247, 126, 220);
+    margin: 10px;
     text-align: center;
-    font-size: 18px;
-    margin-top: 28px;
-    color: rgba(245, 12, 156, 0.774);
+}
+
+.end p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(248, 123, 200, 0.774);
 }
