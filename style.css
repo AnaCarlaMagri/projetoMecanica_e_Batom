@@ -152,6 +152,7 @@
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
 }
+
 .title2 h1{
     display: flex;
     margin: 30px;
@@ -200,6 +201,7 @@
 .aside{
     overflow-x: hidden;
 }
+
 .h1{
     font-size: 30px;
     font-weight: normal;
@@ -223,9 +225,9 @@
     font-size:22px;
     margin-bottom: 10px;
     color: rgb(106, 109, 112);
+    text-align: end;
     
 }       
-
 .ques:hover{
     background-color: rgba(248, 123,200,0.774);
 }
@@ -233,12 +235,17 @@
     background-color: white;
     padding: 1px ;
     font-size: 15px;
-    color: rgb(236, 9, 187);
+    color: rgb(153, 157, 161);
     border-top: 0,5px solid;
     transition: all .3s ease-in-out; 
     overflow:hidden ;
     max-height: 0px;
     text-align: justify;   
+}
+
+.ans .p{
+    padding: 10px;
+    font-size: 18px;
 }
 
 .faq i{
@@ -248,6 +255,7 @@
 
 .faq.active .ans {
     max-height: 1180px;
+    
 }
 .faq.active i{
     transform: rotate(0px);
@@ -261,20 +269,30 @@
     text-align: start;
     gap: 0px;
 }
-.ans p{
-    background-color:white;
-    padding: 10px;
-    font-size: 18px;
-    
 
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    /* Seta apontando para cima */
+    position: relative;
+    right: 10px;
+    /* Espaçamento do final do container */
+    bottom: 10px;
+    /* Espaçamento do fundo do container */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-content: end;
 }
-.seta{
-    border-top: 10px solid;
-    border-left: 10px solid rgb(240, 145, 216);
-    border-right: 10px solid rgb(240, 145, 216);
-    margin: 10px 10px;
-       
+
+.rotate {
+    transform: rotate(45deg);
+    /* Rotaciona a seta 45 graus */
 }
+
 
 p{
     margin-bottom: 10px;
@@ -341,28 +359,31 @@ p{
 }
 
 /* Estilo da seção Newsletter */
+
 .newsletter {
-    flex: 1;
-    /* Permite que essa seção ocupe o espaço disponível */
-    background-color: rgb(248, 184, 234);
-    padding: 20px;
+    background-color: rgb(212, 216, 221);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
-    text-align: start;
-    max-width: 48%;
-    /* Limita a largura máxima para caber lado a lado */
+    display: flex;
+    flex-direction: column;
+    padding:   20px;
+    box-shadow: 0 2px 4px rgb(230, 133, 209);
+    margin: 50px;
+    max-width: 500px;
+    
+    
 }
 
 .newsletter h2 {
-    font-size: 25px;
+    font-size: 28px;
     margin-bottom: 10px;
-    color: rgb(247, 126, 220);
+    color: rgb(230, 133, 209);
+    text-align: center;
 }
 
 .newsletter p {
-    font-size: 18px;
+    font-size: 20px;
     color: hsl(0, 0%, 100%);
-    text-align: center;
+    text-align:start ;
     margin: 20px 0;
 }
 
@@ -388,14 +409,16 @@ input[type="email"] {
     font-size: 14px;
 }
 button {
-    background-color: rgb(248, 184, 234);
+    background-color: rgb(230, 133, 209);
     color: rgba(243, 233, 239, 0.774);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 0 10px 0;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 15px;
-    transition: background-color 0.3s;
+    border-radius: 10px;
+    transition:  background-color 0.3s;
+    width: auto;
+    
 }
 
 button:hover {
@@ -416,5 +439,5 @@ button:hover {
 .end p {
     margin: 0;
     font-size: 14px;
-    color: rgba(248, 123, 200, 0.774);
+    color: rebeccapurple;
 }

@@ -26,3 +26,14 @@ function toggleContent(button) {
     button.textContent = "Continuar Lendo";
   }
 }
+
+
+
+document.getElementById("arrow").addEventListener("click", function () {
+  this.classList.toggle("rotate");
+});
+
+
+document.getElementById("card-novapagina").addEventListener("click", function () {
+  window.location.href = "nova-pagina.html";
+});
